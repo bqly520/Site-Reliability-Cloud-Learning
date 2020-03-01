@@ -12,16 +12,13 @@ import redditconf
 def retrieveToken (): 
     reddit = praw.Reddit(client_id=redditconf.client_id[0],
                          client_secret=redditconf.client_secret[0],
-                         password=redditconf.password[0],
-                         user_agent=redditconf.user_agent[0],
-                         username=redditconf.username[0])
+                         user_agent=redditconf.user_agent[0])
     return reddit
 
 # Including main so methods within this module can be reused
 if __name__ == '__main__':
     # Printing out who is the current reddit user
     reddit = retrieveToken()
-    print("Scraping from User: " + str(reddit.user.me()))
 
     hot_posts = reddit.subreddit('wallstreetbets').hot(limit=10)
     for post in hot_posts:
