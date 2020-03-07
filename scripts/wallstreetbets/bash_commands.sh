@@ -22,3 +22,4 @@ pip3 install google, worked!
 # Helpful Links:
 # https://stackoverflow.com/questions/4383571/importing-files-from-different-folder
 # https://praw.readthedocs.io/en/latest/getting_started/authentication.html#
+# https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html

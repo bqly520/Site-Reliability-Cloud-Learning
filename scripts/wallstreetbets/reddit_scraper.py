@@ -5,6 +5,7 @@
 # Importing sys is needed to externalize the secrets
 
 import praw
+import pprint
 import sys
 sys.path.insert(1, '/Users/bryan/Documents/Configurations/reddit')
 import redditconf
@@ -16,10 +17,14 @@ def retrieveToken ():
     return reddit
 
 # Including main so methods within this module can be reused
+# pprint.pprint(vars(post)) can be used to display attributes of[Comment, Message, Redditor, Submission]
 if __name__ == '__main__':
-    # Printing out who is the current reddit user
+    # Retrieving lurker token
     reddit = retrieveToken()
 
-    hot_posts = reddit.subreddit('wallstreetbets').hot(limit=10)
+    hot_posts = reddit.subreddit('wallstreetbets').hot(limit=1)
     for post in hot_posts:
-        print(post.title)
+        url_post = post.url
+        submission = reddit.submission(url=url_post)
+        for top_level_comment in submission.comments:
+            print(top_level_comment.body)
