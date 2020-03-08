@@ -20,7 +20,7 @@ def getToken():
 def getTicker(tick):
     pass
 
-# Sorts the top-level comments of a submission and returns an array with size num_comments
+# Sorts the top-level comments of a submission and returns an array with all of the comments
 def sortComments(sort, num_comments):
     pass
 
@@ -28,6 +28,7 @@ def sortComments(sort, num_comments):
 def countOptionKeywords():
     pass
 
+# Calculating the stock trend by using 1 weeks worth of data and using variables like market open, close, and etc...
 def calculateStockTrend():
     pass
 

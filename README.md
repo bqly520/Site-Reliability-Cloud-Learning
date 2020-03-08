@@ -8,6 +8,14 @@ Welcome! The goal and intent of this page is to practice and continue learning h
 
 >In this directory, you will find some key concepts in Azure that I've found useful and key for learning how to understand cloud concepts.
 
+[Chef](chef/)
+
+>To be filled
+
+[Disaster Recovery and High Availability](disaster_recover_ha/)
+
+>To be filled
+
 [Glassdoor Interview Questions](glassdoor_interview_questions/)
 
 >To be filled
@@ -31,3 +39,7 @@ Welcome! The goal and intent of this page is to practice and continue learning h
 [Scripts](scripts/)
 
 >I have included some automation projects that I've been exploring using REST API's with scripts in Python, Bash, and even GO!
+
+[Terraform](terraform/)
+
+>To be filled
