@@ -2,7 +2,7 @@
 
 ## Sections
 
-* [TCP vs UDP](###TCP-vs-UDP)
+* [TCP vs UDP](###tcp-vs-udp)
 
 
 ### TCP vs UDP
