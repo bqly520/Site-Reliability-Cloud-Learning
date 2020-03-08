@@ -8,6 +8,26 @@ Welcome! The goal and intent of this page is to practice and continue learning h
 
 >In this directory, you will find some key concepts in Azure that I've found useful and key for learning how to understand cloud concepts.
 
+[Glassdoor Interview Questions](glassdoor_interview_questions/)
+
+>To be filled
+
 [Jenkins](jenkins/)
 
 >To be filled
+
+[Networking](networking/)
+
+>To be filled
+
+[Operating System](operating_system/)
+
+>To be filled
+
+[Python](python/)
+
+>To be filled
+
+[Scripts](scripts/)
+
+>I have included some automation projects that I've been exploring using REST API's with scripts in Python, Bash, and even GO!

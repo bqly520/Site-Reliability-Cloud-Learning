@@ -23,3 +23,5 @@ pip3 install google, worked!
 # https://stackoverflow.com/questions/4383571/importing-files-from-different-folder
 # https://praw.readthedocs.io/en/latest/getting_started/authentication.html#
 # https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html
+# https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984
+# https://github.com/ranaroussi/yfinance
