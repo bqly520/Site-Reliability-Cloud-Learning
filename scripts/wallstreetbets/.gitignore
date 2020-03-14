@@ -1,1 +1,2 @@
-ignoresecrets.py
+.vscode
+__pycache__
