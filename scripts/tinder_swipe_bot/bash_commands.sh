@@ -16,4 +16,4 @@ pip3 install virtualenv
 
 # Now after creating virtual environment, you need to activate it. 
 # Remember to activate the relevant virtual environment every time you work on the project. This can be done using the following command
-source venv//bin/activate
+source venv/bin/activate
