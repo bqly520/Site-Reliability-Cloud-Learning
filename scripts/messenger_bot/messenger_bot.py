@@ -81,7 +81,7 @@ class MessengerBot():
             try:
                 sticker = self.driver.find_element_by_xpath("//td[@class='_51m-']").click()
                 self.driver.find_element_by_xpath("//button[@class=' _2pge _42ft']").click()
-                #flag = False
+                flag = False
             except Exception:
                 # clearing out sticker to try again
                 self.driver.find_element_by_xpath("//button[@class=' _2pge _42ft']").click()
@@ -95,12 +95,3 @@ if __name__ == '__main__':
     bot.login()
     #bot.spam("neverlandfairy", annoyingMsg)
     bot.sticker("neverlandfairy")
-
-#     <div tabindex="-1" class="_5r8h" role="button"><div aria-label="Kung Fu Panda  sticker" class="_5r8i" role="img" tabindex="0" style="background-image: url(&quot;https://scontent-lax3-1.xx.fbcdn.net/v/t39.1997-6/p480x480/12624077_447147892151069_1961484347_n.png?_nc_cat=100&amp;_nc_sid=0572db&amp;_nc_oc=AQk8azJMd5hSUBeRhS6YSGIADf5sRLK9VMFp4ZQwV_GcrWxL8FmWnu0pCHMRwQXcF78&amp;_nc_ht=scontent-lax3-1.xx&amp;oh=a4cda7587925eba5dcb112340da16ed5&amp;oe=5E91A66D&quot;); background-size: 304px 228px; cursor: pointer; height: 64px; width: 64px; background-position: -6px -6px; image-rendering: -webkit-optimize-contrast;"></div></div>
-#     <td class="_51m-"><div tabindex="-1" class="_5r8h" role="button"><div aria-label="Kung Fu Panda  sticker" class="_5r8i" role="img" tabindex="0" style="background-image: url(&quot;https://scontent-lax3-1.xx.fbcdn.net/v/t39.1997-6/p480x480/12624077_447147892151069_1961484347_n.png?_nc_cat=100&amp;_nc_sid=0572db&amp;_nc_oc=AQk8azJMd5hSUBeRhS6YSGIADf5sRLK9VMFp4ZQwV_GcrWxL8FmWnu0pCHMRwQXcF78&amp;_nc_ht=scontent-lax3-1.xx&amp;oh=a4cda7587925eba5dcb112340da16ed5&amp;oe=5E91A66D&quot;); background-size: 304px 228px; cursor: pointer; height: 64px; width: 64px; background-position: -6px -6px; image-rendering: -webkit-optimize-contrast;"></div></div></td>
-
-
-# sticker = self.driver.find_element_by_xpath("//td[@class='_51m-']").click()
-# bot.driver.find_element_by_xpath("//td[@class='_51m-']").click()
-#<button class=" _2pge _42ft" type="submit" value="1"><i alt="" class="img sp_KxX7nhgWxO-_2x sx_c20488"></i><span class="accessible_elem" id="js_rn">Clear search</span></button>
-
