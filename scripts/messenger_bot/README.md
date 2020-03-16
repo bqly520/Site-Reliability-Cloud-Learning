@@ -14,8 +14,8 @@ This is a messenger bot that provides a few functionalities! From spamming a fri
 - Python
   - [virtualenv](#virtualenv)
   - [pycache](#pycache)
-  - [try/except](#try/except)
-  - [\_\_main\_\_](#__main__)
+  - [try/except](#try-except)
+  - [\_\_main\_\_](#\_\_main\_\_)
 
 ### Setup and Execute
 
