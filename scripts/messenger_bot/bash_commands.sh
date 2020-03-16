@@ -32,6 +32,16 @@ python -i messenger_bot.py
 # https://stackoverflow.com/questions/48339682/using-python-selenium-to-send-message-to-friend-in-facebook
 # Had to follow this to figure out how to send messages... :)
 
-# Use this python package to generate random words
+# Use this python package to generate random words, used my own dictionary instead :p
 pip install random-word
 
+# https://stackoverflow.com/questions/16869024/what-is-pycache
+# Best to remove pycache so someone doesn't accidentally push their secrets into Github if they forget to update .gitignore
+# -i flag is for interactive session, -B suppresses the use of pycache
+# A __pycache__ folder is created when you use the line:
+# import file_name
+# or try to get information from another file you have created. 
+# This makes it a little faster when running your program the second time to open the other file.
+python -B -i messenger_bot.py
+vi ~/.bash_profile
+export PYTHONDONTWRITEBYTECODE="bobo"

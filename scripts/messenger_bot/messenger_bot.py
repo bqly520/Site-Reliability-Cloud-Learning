@@ -4,17 +4,19 @@ from secrets import username, password
 from selenium.webdriver.common.action_chains import ActionChains
 from random import randint
 
+PYTHONDONTWRITEBYTECODE="bobo"
 class MessengerBot():
 
     # init methods or contructors
-    def __init__(self, name, incognito):
+    def __init__(self, incognito):
         if incognito == True:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.add_argument("--incognito")
             self.driver = webdriver.Chrome(options=chrome_options)
+            self.__name = "Bobo"
         else:
             self.driver = webdriver.Chrome()
-            self.name = name
+            self.__name = "Bobo"
 
     def login(self):
         self.driver.get("https://www.messenger.com")
@@ -35,13 +37,12 @@ class MessengerBot():
     def spam(self, person, message):
         self.messagePerson(person)
 
-        # an infinite loop to send an funny message
+        # an infinite loop to send a funny message
         while True:
             message_in = self.driver.find_element_by_xpath("//*[@data-editor]").click()
             actions = ActionChains(self.driver)
-            actions.send_keys(message + "\n")
+            actions.send_keys(message + " -" + self.__name + "\n")
             actions.perform()
-            sleep(60)
 
     def emoji(self):
         # send a like emoji too!
@@ -56,7 +57,6 @@ class MessengerBot():
     # Need to figure out a more simple dictionary to be able to find stickers :)
     def sticker(self, person):
         self.messagePerson(person)
-        #randSticker = RandomWords()
 
         # send a sticker too!
         sleep(1)
@@ -67,9 +67,8 @@ class MessengerBot():
 
             sleep(1)
 
-            #word_file = "/usr/share/dict/words"
-            #randomWords = open(word_file).read().splitlines()
-            randomWords = ['happy','love','sad','miss','poop','funny','kiss','hello','bye','yum']
+            word_file = "dictionary"
+            randomWords = open(word_file).read().splitlines()
             random = randomWords[randint(0, len(randomWords)-1)]
 
             self.driver.find_element_by_xpath("//input[@placeholder='Search stickers']").click()
@@ -87,11 +86,13 @@ class MessengerBot():
                 self.driver.find_element_by_xpath("//button[@class=' _2pge _42ft']").click()
                 print("Oops. There was an exception. Trying again...")
         
+    def setName(self, name):
+        self.__name = name
 
 if __name__ == '__main__':
-    annoyingMsg = "Good morning, sunshine. -Bobo-"
-
-    bot = MessengerBot("Bobo",True)
+    annoyingMsg = "Good morning, sunshine."
+    bot = MessengerBot(True)
     bot.login()
+    #bot.setName("Hacker")
     #bot.spam("neverlandfairy", annoyingMsg)
     bot.sticker("neverlandfairy")
