@@ -5,17 +5,17 @@ This is a messenger bot that provides a few functionalities! From spamming a fri
 ### Concepts Learned
 - OOP
   - [Class](#class)
-  - Object
-  - Methods
-  - Encapsulation
+  - [Object](#object)
+  - [Methods](#methods)
+  - [Encapsulation](#encapsulation)
 - [Selenium Webdriver](#selenium-webdriver)
-  - XPath
-  - ActionChains
+  - [XPath](#xpath)
+  - [ActionChains](#actionchains)
 - Python
   - [virtualenv](#virtualenv)
   - [pycache](#pycache)
-  - try/except
-  - \_\_main\_\_
+  - [try/except](#try/except)
+  - [\_\_main\_\_](#__main__)
 
 ### Setup and Execute
 
@@ -36,7 +36,7 @@ source venv/bin/activate
 # close and exit out of your virtual environment
 deactivate
 ```
-###### Selenium Webdrive
+###### Selenium Webdriver
 3. Install the following packages 
 ```bash
 # installs Selenium framework, drives the interactions on the required web page and rerun them without any manual input
@@ -80,15 +80,43 @@ class MessengerBot():
 
     # init method that includes an incognito flag with a private attribute called 'name'
     # there is a setter function below to make changes to the name attribute if needed
+    # if you'd like to start an incognito session, 'enable incognito = True'
     def __init__(self, name, incognito):
-
-    def login(self):
-    def spam(self, person, message):
-    def emoji(self):
-    def messagePerson(self, person):
-    def sticker(self, person):
-    def setName(self, name):
     
-if __name__ == '__main__':
+    # this method will enable you to login to Messenger
+    def login(self):
+```
 
+###### XPath
+###### ActionChains
+```python
+# This method has an INFINITE while loop to spam the person of your choice with
+# the message passed into the function. To exit out of the infinite loop,
+# use the following key combo <CTRL>+C
+def spam(self, person, message):
+
+# This method will ensure your window is messaging the correct person after login
+def messagePerson(self, person):
+```
+
+###### Methods
+```python
+    # This method will send an emoji or it just smashes that like button
+    def emoji(self):
+```
+
+###### try/except
+```python  
+def sticker(self, person):
+```
+
+###### Encapsulation
+```python
+def setName(self, name):
+```
+
+###### Object
+###### __main__
+```python
+if __name__ == '__main__':
 ```
