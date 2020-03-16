@@ -116,7 +116,7 @@ def setName(self, name):
 ```
 
 ###### Object
-###### __main__
+###### \_\_main\_\_
 ```python
 if __name__ == '__main__':
 ```
