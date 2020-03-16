@@ -34,7 +34,7 @@ Unfortunately, you will have to clone all of the materials in this repository or
 
 ###### Class
 '''python
-# init method that includes an incognito flag with a private attribute called 'name'
-# there is a setter function below to make changes to the name attribute if needed
+#init method that includes an incognito flag with a private attribute called 'name'
+#there is a setter function below to make changes to the name attribute if needed
 def __init__(self, name, incognito):
 '''
