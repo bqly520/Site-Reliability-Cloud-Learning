@@ -11,7 +11,7 @@ mv ~/Downloads/chromedrive /usr/local/bin
 pip3 install selenium
 
 # We use a module named virtualenv which is a tool to create isolated Python environments. 
-# virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
+# virtualenv creates a folder which contains all the necessary executables to use the packages(“site-packages”) that a Python project would need.
 # In a scenario where we're using Two versions of Django, Python can’t differentiate between versions in the “site-packages” directory.
 # https://www.geeksforgeeks.org/python-virtual-environment/
 pip3 install virtualenv
