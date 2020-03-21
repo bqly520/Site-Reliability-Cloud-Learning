@@ -15,7 +15,7 @@ This is a messenger bot that provides a few functionalities! From spamming a fri
   - [virtualenv](#virtualenv)
   - [pycache](#pycache)
   - [try/except](#tryexcept)
-  - [\_\_main\_\_](#main)
+  - [\_\_main\_\_](#__main__)
 
 ### Setup and Execute
 
@@ -88,11 +88,11 @@ class MessengerBot():
 ```
 
 ###### XPath
-###### ActionChains
 ```python
 # This method has an INFINITE while loop to spam the person of your choice with
 # the message passed into the function. To exit out of the infinite loop,
 # use the following key combo <CTRL>+C
+# XPath can be used to navigate through elements and attributes in an XML document.
 def spam(self, person, message):
 
 # This method will ensure your window is messaging the correct person after login
@@ -101,22 +101,34 @@ def messagePerson(self, person):
 
 ###### Methods
 ```python
-    # This method will send an emoji or it just smashes that like button
-    def emoji(self):
+# This method will send an emoji or it just smashes that like button
+# Methods are functions defined inside the body of a class. They are used to define the behaviors of an object.
+def emoji(self):
 ```
 
 ###### try/except
+###### ActionChains
 ```python  
+# This method will loop through the dictionary of key words and will choose a randomized sticker
+# The try block lets you test a block of code for errors.
+# The except block lets you handle the error. This is needed because if we chose a key word that didn't match any stickers,
+# we will simply clear out the sticker and try again.
+# ActionChains, ActionChains are a way to automate low level interactions such as mouse movements, mouse button actions, key press, and context menu interactions. This is useful for doing more complex actions like hover over and drag and drop.
 def sticker(self, person):
 ```
 
 ###### Encapsulation
 ```python
+# This method will allow you to set the name of the sender, and can only be set by using this method, this the the private attribute
+# Encapsulation describes the idea of wrapping data and the methods that work on data within one unit.
 def setName(self, name):
 ```
 
 ###### Object
 ###### \_\_main\_\_
 ```python
+# __main__ , If python runs program with main, this will execute everything including main in-order from top to bottom. If python runs a program and imports the program with a main function, the new program will run everything besides the stuff in main!
+# An object is also called an instance of a class and the process of creating this object is called instantiation.
+# Object is simply a collection of data (variables) and methods (functions) that act on those data. 
 if __name__ == '__main__':
 ```
