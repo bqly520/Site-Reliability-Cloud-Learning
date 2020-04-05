@@ -34,7 +34,7 @@ Welcome! The goal and intent of this page is to practice and continue learning h
 
 [Python](python/)
 
->To be filled
+>Overview of Python and what libraries I've used more often. Additionally, we'll go over 'Python things' like list comprehensions, string manipulation, sorting, and more.
 
 [Scripts](scripts/)
 
