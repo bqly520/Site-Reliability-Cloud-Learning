@@ -4,11 +4,12 @@ Here are some things I've learned throughout using Python that I've found useful
 
 ### Overview
 - [Strings](#strings)
-- Lists
+- [Lists](#lists)
 - Dictionaries
 - Libraries
     - - virtualenv
 - Exception Handling
+- [Dunder Methods](#dunder-methods)
 
 ### Strings
 
@@ -17,3 +18,8 @@ Here are some things I've learned throughout using Python that I've found useful
 
 - `l.reverse()`: Reverses a list of objects in-place and does not return a copy of the list. An in-place method modifies data structures or objects outside of its own stack frame.
 - `len(l)` : Gets the length of the list
+
+
+### Dunder Methods
+Dunder == *double underscore*
+- `__str__(self)`: return string representation of object
