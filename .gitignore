@@ -1,0 +1,7 @@
+minikube/project0/.terraform
+minikube/project0/buildachart
+minikube/project0/terraform.*
+
+
+terraform/aws/environment/learn-terraform-modules
+**.terraform
