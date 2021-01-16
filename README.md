@@ -4,13 +4,13 @@ Welcome! The goal and intent of this page is to practice and continue learning h
 
 ### Overview
 
+[Ansible](ansible/)
+
+>To be filled
+
 [Azure](azure/)
 
 >In this directory, you will find some key concepts in Azure that I've found useful and key for learning how to understand cloud concepts.
-
-[Chef](chef/)
-
->To be filled
 
 [Disaster Recovery and High Availability](disaster_recover_ha/)
 
